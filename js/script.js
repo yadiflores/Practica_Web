@@ -9,6 +9,7 @@ const $footer1 = document.querySelector(".footer1")
 const $footer2 = document.querySelector(".footer2")
 const $volver1 = document.querySelector(".volver1")
 const $volver2 = document.querySelector(".volver2")
+const $titulo = document.querySelector(".titulo")
 
 $nav1.classList.add("ocultar")
 $nav2.classList.add("ocultar")
@@ -16,6 +17,7 @@ $main1.classList.add("ocultar")
 $main2.classList.add("ocultar")
 $footer1.classList.add("ocultar")
 $footer2.classList.add("ocultar")
+
 function ocultarTodo1(){
     $pag1.classList.add("ocultar")
     $pag2.classList.add("ocultar")
@@ -23,6 +25,7 @@ function ocultarTodo1(){
     $main1.classList.remove("ocultar")
     $footer1.classList.remove("ocultar")
     $body.classList.add("color")
+    $titulo.classList.add("ocultar")
 }
 function ocultarTodo2() {
     $pag1.classList.add("ocultar")
@@ -31,6 +34,7 @@ function ocultarTodo2() {
     $main2.classList.remove("ocultar")
     $footer2.classList.remove("ocultar")
     $body.classList.add("color")
+    $titulo.classList.add("ocultar")
 }
 function volver1() {
     $pag1.classList.remove("ocultar")
@@ -39,6 +43,7 @@ function volver1() {
     $main1.classList.add("ocultar")
     $footer1.classList.add("ocultar")
     $body.classList.remove("color")
+    $titulo.classList.remove("ocultar")
 }
 function volver2() {
     $pag1.classList.remove("ocultar")
@@ -47,6 +52,7 @@ function volver2() {
     $main2.classList.add("ocultar")
     $footer2.classList.add("ocultar")
     $body.classList.remove("color")
+    $titulo.classList.remove("ocultar")
 }
 $volver1.addEventListener("click",volver1)
 $volver2.addEventListener("click",volver2)
